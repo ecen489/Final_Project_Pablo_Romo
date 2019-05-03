@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/fwday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Day"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fwday"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="32dp">
+
+        <TextView
+            android:id="@+id/fwBfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fwBcarbs" />
+
+        <TextView
+            android:id="@+id/fwLfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/fwLcarbs" />
+
+        <TextView
+            android:id="@+id/fwDfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toBottomOf="@+id/fwDcarbs" />
+
+        <TextView
+            android:id="@+id/fwSfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/fwScarbs" />
+
+        <TextView
+            android:id="@+id/fwBcarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fwBprotein" />
+
+        <TextView
+            android:id="@+id/fwLcarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/fwLprotein" />
+
+        <TextView
+            android:id="@+id/fwDcarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toBottomOf="@+id/fwDprotein" />
+
+        <TextView
+            android:id="@+id/fwScarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/fwSprotein" />
+
+        <TextView
+            android:id="@+id/fwBprotein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fwBcals" />
+
+        <TextView
+            android:id="@+id/fwLprotein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/fwLcals" />
+
+        <TextView
+            android:id="@+id/fwDprotein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toBottomOf="@+id/fwLcals" />
+
+        <TextView
+            android:id="@+id/fwSprotein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/fwScals" />
+
+        <TextView
+            android:id="@+id/fwBcals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fwBname" />
+
+        <TextView
+            android:id="@+id/fwLcals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/fwLname" />
+
+        <TextView
+            android:id="@+id/fwDcals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toBottomOf="@+id/fwDname" />
+
+        <TextView
+            android:id="@+id/fwScals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/fwSname" />
+
+        <TextView
+            android:id="@+id/fwBname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast" />
+
+        <TextView
+            android:id="@+id/fwLname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/lunch" />
+
+        <TextView
+            android:id="@+id/fwDname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toBottomOf="@+id/dinner" />
+
+        <TextView
+            android:id="@+id/fwSname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toBottomOf="@+id/createsnacks" />
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Breakfast"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/lunch"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fwday"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/breakfast"
+            android:text="Lunch"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/dinner"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/breakfast"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dinner"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createsnacks"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/lunch"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/createsnacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Snacks"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dinner"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Gname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast" />
+
+        <TextView
+            android:id="@+id/cals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Calories"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Gname" />
+
+        <TextView
+            android:id="@+id/protien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Protein"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cals" />
+
+        <TextView
+            android:id="@+id/carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Carbs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/protien" />
+
+        <TextView
+            android:id="@+id/fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Fat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carbs" />
+
+        <TextView
+            android:id="@+id/totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="Totals"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tcals"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="395dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="180dp"
+            android:background="?attr/actionModeSplitBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/tcals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="1234 cals"
+            app:layout_constraintEnd_toStartOf="@+id/tprotein"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/totals"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tprotein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="123 g protein"
+            app:layout_constraintEnd_toStartOf="@+id/tcarbs"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tcals"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tcarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="123 g carbs"
+            app:layout_constraintEnd_toStartOf="@+id/tfat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tprotein"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="12 g fat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tcarbs"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="683dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            tools:layout_editor_absoluteX="74dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

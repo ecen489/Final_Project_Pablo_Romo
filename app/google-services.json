@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "607945132558",
+    "firebase_url": "https://fp-pabloromo.firebaseio.com",
+    "project_id": "fp-pabloromo",
+    "storage_bucket": "fp-pabloromo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607945132558:android:6f819afac4cb66ee",
+        "android_client_info": {
+          "package_name": "com.example.final_project_pablo_romo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607945132558-bj09s94st0quq0egc9cq1ui06h5lo0eu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk2Y8F52DWrKEoErOfkkGiX2vX5Y4eZFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607945132558-bj09s94st0quq0egc9cq1ui06h5lo0eu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
